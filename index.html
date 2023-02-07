@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css"
+          type="text/css">
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="outer">
+        <div class="text-wrapper">
+            <input
+                    id="textInput"
+                    type="text"
+                    placeholder="insert number here"
+                    class="form-control"
+            >
+        </div>
+        <div class="number-wrapper">
+            <input
+                    onclick="sum()"
+                    style="background: #1abc9c"
+                    type="button" value="+">
+            <input onclick="sub()" style="background: #2ecc71" type="button" value="-">
+            <input onclick="div()" style="background: #2980b9" type="button" value="/">
+            <input onclick="mul()" style="background: #34495e" type="button" value="*">
+            <input onclick="mod()" style="background: #d35400" type="button" value="%">
+        </div>
+        <div class="number-wrapper">
+            <input style="background: #f39c12" type="button" value="♻" onclick="refresh()">
+        </div>
+    </div>
+</div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
